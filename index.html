@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colors</title>
+  <title>Discover Europe - Fall Vibes</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1 id="top">Colors!</h1>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="subtitle">DISCOVER EUROPE</span>
+      <h1>Fall Vibes,<br><span class="highlight">Bigger Dreams.</span></h1>
+      <p class="description">Explore the most beautiful destinations in Europe during the magical autumn season.</p>
+      <a href="#gallery" class="btn">Explore Gallery &rarr;</a>
+    </div>
   </header>
 
-  <main>
-    <h2>Basic Media Queries</h2>
-    <p>In this assignment you will add two media queries to the css file.</p>
-    <ul>
-      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+  <!-- Gallery Section -->
+  <main id="gallery" class="gallery-container">
+    
+    <!-- Card 01 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="images/Red.jpeg" alt="Rothenburg ob der Tauber">
+        <span class="badge-num">01</span>
+        <button class="badge-heart" aria-label="Favorite">&#9825;</button>
+      </div>
+      <div class="card-content">
+        <span class="country">GERMANY</span>
+        <h3>Rothenburg ob der Tauber</h3>
+        <p>Medieval charm in every corner.</p>
+      </div>
+    </div>
 
-      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
-    </ul>
-    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
+    <!-- Card 02 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="images/Orange.png" alt="Amsterdam">
+        <span class="badge-num">02</span>
+        <button class="badge-heart" aria-label="Favorite">&#9825;</button>
+      </div>
+      <div class="card-content">
+        <span class="country">NETHERLANDS</span>
+        <h3>Amsterdam</h3>
+        <p>Canals, bikes and golden leaves.</p>
+      </div>
+    </div>
 
-    <div>
-      <img src="images/Red.jpeg" alt="Red" width="200">
-      <p class = "label">Red</p>
+    <!-- Card 03 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="images/Yellow.png" alt="Lake Blausee">
+        <span class="badge-num">03</span>
+        <button class="badge-heart" aria-label="Favorite">&#9825;</button>
+      </div>
+      <div class="card-content">
+        <span class="country">SWITZERLAND</span>
+        <h3>Lake Blausee</h3>
+        <p>Nature's autumn masterpiece.</p>
+      </div>
     </div>
-    <div>
-      <img src="images/Orange.png" alt="Orange" width="200">
-      <p class = "label">Orange</p>
-    </div>
-    <div>
-      <img src="images/Yellow.png" alt="Yellow" width="200">
-      <p class = "label">Yellow</p>
-    </div>
-    <div>
-      <img src="images/Green.png" alt="Green" width="200">
-      <p class = "label">Green</p>
-    </div>
-    <div>
-      <img src="images/Blue.png" alt="Blue" width="200">
-      <p class = "label">Blue</p>
-    </div>
-    <div>
-      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-      <p class = "label">Indigo</p>
-    </div>
-    <div>
-      <img src="images/Purple.png" alt="Purple" width="200">
-      <p class = "label">Purple</p>
-    </div>
-    <div>
-      <img src="images/Pink.jpeg" alt="Pink" width="200">
-      <p class = "label">Pink</p>
-    </div>
-    <div>
-      <img src="images/White.png" alt="White" width="200">
-      <p class = "label">White</p>
-    </div>
-    </div>
+
   </main>
 
-  <footer>
-    <a href="#top">Jump to the Top</a>
-  </footer>
 </body>
-
 </html>
