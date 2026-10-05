@@ -1,0 +1,74 @@
+body {
+    background-color: #dedede;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+/* ------------------------------------------
+   Mobile View (Mặc định)
+   ------------------------------------------ */
+div {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   Query #1: Tablet View (Trigger ở 772px)
+   ========================================== */
+@media screen and (min-width: 772px) {
+    div {
+        display: inline-block !important;
+        width: 45vw !important;
+        vertical-align: top !important; /* Căn thẳng hàng mép trên */
+        margin: 15px 1% !important;
+    }
+
+    img {
+        width: auto !important;
+        height: 30vh !important;     /* Cố định chiều cao 30vh để tất cả hình bằng nhau */
+        max-height: 30vh !important;
+        object-fit: contain;          /* Giữ đúng tỷ lệ ảnh không bị móp */
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================
+   Query #2: Large Screen View (Trigger ở 998px)
+   ========================================== */
+@media screen and (min-width: 998px) {
+    div {
+        width: 30vw !important; /* Chiều rộng 30% viewport width */
+    }
+}
